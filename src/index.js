@@ -1,8 +1,22 @@
-import React from 'react';
+import React, { Component, Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Color from "./Color";
+import Clock from './Clock'
+import Request from './Request'
+
+class App extends Component{
+	render(){
+		return(
+      <Fragment>
+			 <Color />
+       <Clock /> 
+       <Request />
+			</Fragment>
+		);
+	}
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
